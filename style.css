@@ -56,6 +56,7 @@ nav {
 
 .logo {
     width: 160px;
+    filter: grayscale(1);
 }
 
 ul {
