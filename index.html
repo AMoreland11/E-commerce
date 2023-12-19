@@ -7,38 +7,42 @@
     <title>Library</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/bf78b2bfdd.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </head>
 <body>
     <section id="landing">
         <nav>
             <div class="nav-container">  
-                <img class="logo"  src="./assets/Library.svg" alt="">
-                <ul class="nav-links">
-                    <li><a href="#" class="nav-link">Home</a></li>
-                    <li><a href="#" class="nav-link">Contact</a></li>
-                    <li><a href="#" class="nav-link nav-link--primary">Books</a></li>
-                </ul>
-            </div>
-            <button class="btn-menu">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-            <div class="menu-backdrop">
-                <button class="btn-menu btn-menu-close">
-                    <i class="fa-solid fa-times"></i>
+                    <img class="logo"  src="./assets/Library.svg" alt="">
+                    <ul class="nav-links">
+                        <li><a href="#" class="nav-link">Home</a></li>
+                        <li><a href="#" class="nav-link">Contact</a></li>
+                        <li><a href="#" class="nav-link nav-link--primary">Books</a></li>
+                    </ul>
+                </div>
+                <button class="btn-menu" onclick="openMenu()">
+                    <i class="fa-solid fa-bars"></i>
                 </button>
-                <ul>
-                    <li class="menu-list"><a href="#" class="menu-link">Home</a></li>
-                    <li class="menu-list"><a href="#features" class="menu-link">Books</a></li>
-                    <li class="menu-list"><a href="" class="menu-link no-cursor">Contacts</a></li>
-                </ul>
-            </div>    
+                <div class="menu-backdrop">
+                    <button class="btn-menu btn-menu-close" onclick="closeMenu()">
+                        <i class="fa-solid fa-times"></i>
+                    </button>
+                    <ul class="menu-links">
+                        <li class="menu-list"><a href="#" class="menu-link" onclick="closeMenu()"> Home</a></li>
+                        <li class="menu-list"><a href="#features" class="menu-link" onclick="closeMenu()"> Books</a></li>
+                        <li class="menu-list"><a href="" class="menu-link no-cursor" onclick="closeMenu()"> Contact</a></li>
+                    </ul>
+                </div>  
+            </div>  
         </nav>
         <header>
             <div class="header-container">
                 <div class="header-description">
                     <h1>America's most awarded online library platform</h1>
                     <h2>Find your dream book with <span class="green">Library</span></h2>
+                    <a href="#features">
                     <button class="btn">Browse Books</button>
+                    </a>
                 </div>
                 <figure class="header-img--wrapper">
                     <img src="./assets/Undraw_Books.svg" alt="">
@@ -93,7 +97,7 @@
             </div>
         </section>
         <section id="features">
-            <div class="container">
+               class="container">
                 <div class="row">
                     <h2 class="section-title">
                         Featured <span class="green">Books</span>
